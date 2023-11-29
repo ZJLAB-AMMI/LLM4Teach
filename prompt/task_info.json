@@ -1,0 +1,34 @@
+{
+    "twodoor":{
+        "episode": 150,
+        "level": "easy",
+        "description": "In a locked 2D grid room, there is an agent whose task is to open the door. The door can only be opened while agent holds the key. The agent can perform the following actions: explore, go to <object>, pick up <object>, drop <object>, or open <object>. Please clarify which object the agent has seen and is holding given the information provided. Then, please inference what the agent should do in current state. Finally, please select the correct agent action.",
+        "example": "\n Example: \n Agent see <key>, holds <nothing>. \n 1. What agent sees and holds: Agent sees key, holds nothing, has not seen door yet. \n 2. What should the agent do: the agent should go to the key and then, pick it up. \n 3. Action: {go to <key>, pick up <key>} \n.",
+        "configurations": "MiniGrid-TwoDoor-Min20-Max20" 
+    },
+    
+    "simpledoorkey":{
+        "episode": 150,
+        "level": "easy",
+        "description": "In a locked 2D grid room, there is an agent whose task is to open the door. The door can only be opened while agent holds the key. The agent can perform the following actions: explore, go to <object>, pick up <object>, drop <object>, or open <object>. Please clarify which object the agent has seen and is holding given the information provided. Then, please inference what the agent should do in current state. Finally, please select the correct agent action.",
+        "example": "\n Example: \n Agent see <key>, holds <nothing>. \n 1. What agent sees and holds: Agent sees key, holds nothing, has not seen door yet. \n 2. What should the agent do: the agent should go to the key and then, pick it up. \n 3. Action: {go to <key>, pick up <key>} \n.",
+        "configurations": "MiniGrid-SimpleDoorKey-Min5-Max10-View3" 
+    },
+
+    "lavadoorkey":{
+        "episode": 150,
+        "level": "hard",
+        "description": "In a locked 2D grid room, there is an agent whose task is to open the door. The door can only be opened while agent holds the key. The agent can perform the following actions: explore, go to <object>, pick up <object>, drop <object>, or open <object>. Please clarify which object the agent has seen and is holding given the information provided. Then, please inference what the agent should do in current state. Finally, please select the correct agent action.",
+        "example": "\n Example: \n Agent see <key>, holds <nothing>. \n 1. What agent sees and holds: Agent sees key, holds nothing, has not seen door yet. \n 2. What should the agent do: the agent should go to the key and then, pick it up. \n 3. Action: {go to <key>, pick up <key>} \n.",
+        "configurations": "MiniGrid-LavaDoorKey-Min5-Max10-View3" 
+    },
+
+    "coloreddoorkey":{
+        "episode": 150,
+        "level": "medium",
+        "description": "In a locked 2D grid room, agent can only open door while holding a key that matches color of door. Agent can perform following actions: explore, go to <object>, pick up <object>, drop <object>, or open <object>. Agent can only hold one object. Please clarify which object agent sees and holds given information provided. Then, please inference what agent can do in current state. Finally, please select the correct actions.",
+        "example":  "\n Example: \n Agent sees <key>, holds <nothing>. \n 1. What agent sees and holds: Agent sees key, holds nothing, has not seen door yet. \n 2. What should agent do: Agent should first go to key, and then pick up key. \n 3. Action: {go to <key>, pick up <key>} \n.",
+        "configurations": "MiniGrid-ColoredDoorKey-Min5-Max10-View3"
+    }
+
+}
