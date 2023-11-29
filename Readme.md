@@ -4,7 +4,7 @@
 Recent studies have shown that Large Language Models (LLMs) can be utilized for solving complex sequential decision-making tasks by providing high-level instructions. However, LLM-based agents face limitations in real-time dynamic environments due to their lack of specialization in solving specific target problems. Moreover, the deployment of such LLM-based agents is both costly and time-consuming in practical scenarios. In this paper, we introduce a novel framework that addresses these challenges by training a smaller scale specialized student agent using instructions from an LLM-based teacher agent. By leveraging guided actions provided by the teachers, the prior knowledge of the LLM is distilled into the local student model. Consequently, the student agent can be trained with significantly less data. Furthermore, subsequent training with environment feedback empowers the student agents to surpass the capabilities of their teachers. We conducted experiments on three challenging MiniGrid environments to evaluate the effectiveness of our framework. The results demonstrate that our approach enhances sample efficiency and achieves superior performance compared to baseline methods.
 
 ## Purpose
-This repo is intended to serve as a foundation with which you can reproduce the results of the experiments detailed in our paper, [Large Language Model is a Good Policy Teacher for Training Reinforcement Learning Agents].(https://arxiv.org/abs/2311.13373)
+This repo is intended to serve as a foundation with which you can reproduce the results of the experiments detailed in our paper, [Large Language Model is a Good Policy Teacher for Training Reinforcement Learning Agents](https://arxiv.org/abs/2311.13373).
 
 
 ## Running experiments
