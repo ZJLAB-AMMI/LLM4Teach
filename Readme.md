@@ -8,29 +8,44 @@ This repo is intended to serve as a foundation with which you can reproduce the 
 
 
 ## Running experiments
+### Setup the LLMs
 
-### Basics
+1. For ChatGLM models, please use your own api_key and run the following code to launch the API
+```bash
+python3 -m chatglm_api --host <API_host> --port <API_port>
+```
+
+2. For Vicuna models, please follow the instruction from [FastChat](https://github.com/lm-sys/FastChat) to install Vicuna model on local sever. Here are the commands to launch the API in terminal: 
+
+```bash
+python3 -m fastchat.serve.controller --host localhost --port <controller_port>        ### Launch the controller
+python3 -m fastchat.serve.model_worker --model-name '<model_name>' --model-path <Vicuna_path> --controller http://localhost:<controller_port> --port <model_port> --worker_address http://localhost:<model_port>        ### Launch the model worker
+python3 -m fastchat.serve.api --host <API_host> --port <API_port>        ### Launch the API
+```
+
+
+### Train and evaluate the models
 Any algorithm can be run from the main.py entry point.
 
-to train on a SimpleDoorKey environment,
+To train on a SimpleDoorKey environment,
 
 ```bash
 python main.py train --task SimpleDoorKey --savedir train
 ```
 
-to eval the trained model,
+<!--to train with given query result from LLM as teacher,
+
+```bash
+python main.py train --task SimpleDoorKey --savedir train --offline_planner
+```-->
+
+To evaluate the trained model,
 
 ```bash
 python main.py eval --task SimpleDoorKey --loaddir train --savedir eval
 ```
 
-to train with given query result from LLM as teacher,
-
-```bash
-python main.py train --task SimpleDoorKey --savedir train --offline_planner
-```
-
-to eval teacher policy,
+To evaluate the LLM-based teacher baseline,
 ```bash
 python main.py eval --task SimpleDoorKey --loaddir train --savedir eval --eval_teacher
 ```
