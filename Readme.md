@@ -12,7 +12,7 @@ This repo is intended to serve as a foundation with which you can reproduce the 
 
 1. For ChatGLM models, please use your own api_key and run the following code to launch the API
 ```bash
-python3 -m chatglm_api --host <API_host> --port <API_port>
+python3 -m utils.chatglm_api --host <API_host> --port <API_port>
 ```
 
 2. For Vicuna models, please follow the instruction from [FastChat](https://github.com/lm-sys/FastChat) to install Vicuna model on local sever. Here are the commands to launch the API in terminal: 
