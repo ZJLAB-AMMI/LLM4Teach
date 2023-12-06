@@ -65,12 +65,6 @@ class TeacherPolicy():
         action = np.zeros(self.action_space)
         for skills, prob in zip(skill_list, probs):
             action += self.get_action(skills, obs) * prob
-        # if self.planner.soft:
-        #     action = np.zeros(self.action_space)
-        #     for skills, prob in zip(skill_list, probs):
-        #         action += self.get_action(skills, obs) * prob
-        # else:
-        #     action = self.get_action(skill_list, obs)
         return action
 
 
