@@ -75,7 +75,7 @@ If you find [our work](https://arxiv.org/abs/2311.13373) useful, please kindly c
 ```bibtex
 @article{zhou2023large,
   title={Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents},
-  author={Zhou, Zihao and Hu, Bin and Zhang, Pu and Zhao, Chenyang and Liu, Bin},
+  author={Zhou, Zihao and Hu, Bin and Zhao, Chenyang and Zhang, Pu and Liu, Bin},
   journal={arXiv preprint arXiv:2311.13373},
   year={2023}
 }
