@@ -49,6 +49,25 @@ To evaluate the LLM-based teacher baseline,
 ```bash
 python main.py eval --task SimpleDoorKey --loaddir train --savedir eval --eval_teacher
 ```
+## Local LLM and API
+Please follow the instruction from [FastChat](https://github.com/lm-sys/FastChat) to install Vicuna model on local sever
+Here are the commands to launch the API in terminal: 
+
+Launch the controller
+```bash
+python3 -m fastchat.serve.controller --host localhost --port <controller_port>
+```
+
+to launch the model worker
+```bash
+python3 -m fastchat.serve.controller --host localhost --port <controller_port>
+```
+
+to launch the API
+```bash
+python3 -m fastchat.serve.controller --host localhost --port <controller_port>
+```
+
 
 ## Logging details 
 Tensorboard logging is enabled by default for all algorithms. The logger expects that you supply an argument named ```logdir```, containing the root directory you want to store your logfiles
