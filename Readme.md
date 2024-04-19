@@ -73,11 +73,11 @@ Run ```$ tensorboard --logdir=log``` then navigate to ```http://localhost:6006/`
 ## Citation
 If you find [our work](https://arxiv.org/abs/2311.13373) useful, please kindly cite: 
 ```bibtex
-@article{zhou2023large,
+@inproceedings{liu2017robust,
   title={Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents},
   author={Zhou, Zihao and Hu, Bin and Zhao, Chenyang and Zhang, Pu and Liu, Bin},
-  journal={arXiv preprint arXiv:2311.13373},
-  year={2023}
+  booktitle={The 33rd International Joint Conference on Artificial Intelligence (IJCAI 2024)},
+  year={2024}
 }
 ```
 
